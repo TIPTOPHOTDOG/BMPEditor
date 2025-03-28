@@ -4,7 +4,7 @@
 For the program to work properly, the file must have a width that is a multiple of 4.
 
 ## About
-The program is an example of working with BMP files in the C++ language, as an example of editing the Bresenheim method for drawing lines was implemented.
+The program is an example of working with BMP files in the C++ language, as an example of editing the Bresenham method for drawing lines was implemented.
 
 ## BMP file structure
 

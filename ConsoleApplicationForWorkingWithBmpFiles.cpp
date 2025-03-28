@@ -156,6 +156,7 @@ void ConsoleApplicationForWorkingWithBmpFiles::saveFile()
 		file.open(fileName, std::ios::out | std::ios::binary);
 
 	} while (!file.is_open());
+	bmpFileHeader.bfOffBits = sizeof(BITMAPFILEHEADER) + sizeof(BITMAPINFOHEADER);
 	file.write((char*)&bmpFileHeader, sizeof(BITMAPFILEHEADER));
 	file.write((char*)&bmpFileInfo, sizeof(BITMAPINFOHEADER));
 	file.write((char*)data, bmpFileInfo.biSizeImage * sizeof(char));
